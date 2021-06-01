@@ -23,4 +23,23 @@ int main(void) {
     }
   }
 }
+float wallis_pi(int n){
+
+    float pi_value = 0.0,numerator,denominator,ratio;   
+    for(int i=1;i<=n;i++){
+        numerator = 4 * (i*i);
+        denominator  = numerator - 1;
+        ratio = numerator / denominator;
+        if (i == 1){
+            pi_value = ratio;
+        }
+        else{
+            pi_value *= ratio;
+        }
+    }
+        pi_value *= 2;
+    
+    return pi_value ;
+    
+    }
 
