@@ -50,8 +50,9 @@ float mc_pi(int n){
       points_in_circle++;
     }
     
-    return 4*points_in_circle/(float)n;
   }
+    return 4*points_in_circle/(float)n;
+  
 }
 
 
