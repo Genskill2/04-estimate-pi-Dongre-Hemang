@@ -39,7 +39,7 @@ float wallis_pi(int n){
     }
         pi_value *= 2;
     
-    return pi_value ;
+    return pi_value;
     
     }
 
