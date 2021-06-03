@@ -25,7 +25,7 @@ int main(void) {
 }
 float wallis_pi(int n){
 
-    float pi_value = 0.0,numerator,denominator,ratio;   
+    float pi_value = 1.0,numerator,denominator,ratio;   
     for(int i=1;i<=n;i++){
         numerator = 4 * (i*i);
         denominator  = numerator - 1;
