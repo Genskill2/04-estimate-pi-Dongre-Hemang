@@ -39,20 +39,18 @@ int main(void) {
   }
 }
 float mc_pi(int n){
-  float points_in_circle=0;
+  int points_in_circle=0;
+  float x,y,d;
   for(int i=0;i<n;i++){
-    float x=frandom();
-    float y=frandom();
-    
-    float d=x*x + y*y;
+    x=frandom();
+    y=frandom();
+    d=x*x + y*y;
     
     if(d<=1){
       points_in_circle++;
     }
-
-    float pi_value=4*points_in_circle/(float)n;
     
-    return pi_value;
+    return 4*points_in_circle/(float)n;
   }
 }
 
