@@ -44,7 +44,7 @@ float mc_pi(int n){
   for(int i=0;i<n;i++){
     x=frandom();
     y=frandom();
-    d=x*x + y*y;
+    d=sqrt(x*x + y*y);
     
     if(d<=1){
       points_in_circle++;
